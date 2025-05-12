@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+.jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #6E6E6E;
+    --cor-quaternaria: #A7A7A7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.section__all {
+    display: flex;
+    flex-direction: column;
+}
+
+.div__1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.div__texto__1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+.imagem__div__1 {
+    width: 45%;
+}
+
+.chat {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--cor-terciaria);
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.chat:hover {
+    background-color: var(--cor-quaternaria);
+    text-decoration: none;
+}
+
+.div__2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.div__texto__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+    font-family: var(--fonte-primaria);
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+
+.imagem__div__2 {
+    width: 25%;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.div__3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.div__texto__3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+    font-family: var(--fonte-primaria);
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+
+.imagem__div__3 {
+    width: 40%;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.div__4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.div__texto__4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    font-family: var(--fonte-primaria);
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+
+.imagem__div__4 {
+    width: 25%;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.imagem__rodape {
+    width: 6%;
+    margin-left: 70px;
+}
+
+.rodape__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.links__rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+}
+.imagem__furia__rodape {
+    width: 100em;
+}
+
+.imagem__x {
+    width: 70%;
+}
+
+.imagem__insta {
+    width: 70%;
+}
+
+.imagem__youtube {
+    width: 15%;
+}
+
+.carrossel {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 2400px;
+}
+
+.slides img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
